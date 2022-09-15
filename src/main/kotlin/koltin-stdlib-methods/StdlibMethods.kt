@@ -13,9 +13,10 @@ class StdlibMethods {
         /**Let - let takes the object it is invoked upon as the parameter and returns the result of the lambda expression*/
         string1.let { letK -> println(letK) }.let { outer -> println("inner nested:  $outer") }
 
-        nullString = null
+        nullString = "not null"
 
-        /**Let can be useful for nullable properties - will execute if nullString is not null*/
+        /** Let can be useful for nullable properties - will execute if nullString is not null
+         * Checks if the nullString is null and executes let only if it's not*/
         nullString?.let { println("$it -> printed cause not null") }
 
     }
@@ -31,13 +32,7 @@ class StdlibMethods {
             //Return statement
             newString1
         }
-
     }
 
-
-
-
     var string2: String = "asd"
-
-
 }

@@ -21,11 +21,15 @@ fun main(args: Array<String>) {
     val pair: Pair<Int, Int> = Pair(2,3);
     println("$pair")
 
-    val stdlib:StdlibMethods = StdlibMethods()
+    val stdlibMethods:StdlibMethods = StdlibMethods()
 
-    stdlib.callLetOnString()
+    stdlibMethods.callLetOnString()
 }
 
 fun firstFun(num1: Int, num2: Int): Int {
     return num1*num2
+}
+
+fun returnsVoid() {
+    println("hello from void")
 }
